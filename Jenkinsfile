@@ -7,9 +7,10 @@ def stashName = "buildpod.${env.JOB_NAME}.${env.BUILD_NUMBER}".replace('-', '_')
 def envStage = utils.environmentNamespace('stage')
 def envProd = utils.environmentNamespace('run')
 def setupScript = null
+
 clientsTemplate{
   nodejsNode {
-    container('nodejs') {
+    container(name: 'nodejs') {
       echo "Nodejs Image"
       sh "npm version"
       sh "node --version"
