@@ -10,10 +10,12 @@ def setupScript = null
 
 nodejsTemplate {
   nodejsNode {
-    container('nodejs') {
-        echo "Nodejs Image"
-        sh "npm version"
-        sh "node --version"
-    }
+    ws {
+      container('nodejs') {
+          echo "Nodejs Image"
+          sh "npm version"
+          sh "node --version"
+      }
+    }  
   }
 }
