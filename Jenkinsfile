@@ -9,7 +9,7 @@ def envProd = utils.environmentNamespace('run')
 def setupScript = null
 
 
-  nodejsNode(label: 'nodejs') { 
+  nodejsNode { 
       container(name: 'nodejs') {
           echo "Nodejs Image"
           sh "echo Nodejs"
