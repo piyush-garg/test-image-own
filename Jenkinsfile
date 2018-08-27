@@ -10,4 +10,6 @@ def setupScript = null
 
 nodejsNode {
   echo "Nodejs Image"
+  sh "npm version"
+  sh "node --version"
 }
