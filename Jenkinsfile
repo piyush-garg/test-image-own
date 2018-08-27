@@ -8,8 +8,6 @@ def envStage = utils.environmentNamespace('stage')
 def envProd = utils.environmentNamespace('run')
 def setupScript = null
 
-
-
 nodejsNode {
   echo "Nodejs Image"
 }
