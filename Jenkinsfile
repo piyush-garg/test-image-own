@@ -9,7 +9,7 @@ def envProd = utils.environmentNamespace('run')
 def setupScript = null
 clientsTemplate{
   nodejsNode {
-    container(name: 'nodejs') {
+    container('nodejs') {
       echo "Nodejs Image"
       sh "npm version"
       sh "node --version"
