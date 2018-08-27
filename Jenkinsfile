@@ -13,6 +13,9 @@ nodejsTemplate {
     ws {
       container('nodejs') {
           echo "Nodejs Image"
+        
+        
+        
           sh "echo Nodejs"
           sh "npm version"
           sh "node --version"
