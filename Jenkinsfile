@@ -14,6 +14,7 @@ def setupScript = null
       container('nodejs') {
           echo "Nodejs Image"
           sh "echo Nodejs"
+          sh "hostname"
           sh "npm version"
           sh "node --version"
       }
