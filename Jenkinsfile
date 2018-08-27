@@ -12,7 +12,7 @@ def setupScript = null
 
   nodejsNode {
     
-      container('nodejs') {
+      container(name: 'nodejs') {
           echo "Nodejs Image"
           sh "echo Nodejs"
           sh "npm version"
