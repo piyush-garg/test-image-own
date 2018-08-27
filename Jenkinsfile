@@ -8,7 +8,6 @@ def envStage = utils.environmentNamespace('stage')
 def envProd = utils.environmentNamespace('run')
 def setupScript = null
 
-clientsTemplate{
   nodejsNode {
     container(name: 'nodejs') {
       echo "Nodejs Image"
@@ -16,4 +15,3 @@ clientsTemplate{
       sh "node --version"
     }
   }
-}
