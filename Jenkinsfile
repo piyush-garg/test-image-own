@@ -10,7 +10,7 @@ def setupScript = null
 
 nodejsTemplate {
   nodejsNode {
-    ws (
+    ws {
       container('nodejs') {
           echo "Nodejs Image"
           sh "echo Nodejs"
